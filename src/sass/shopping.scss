@@ -1,0 +1,28 @@
+@mixin widheit($width,$height){
+	width:$width;
+	height:$height;
+} 
+body{
+	#top{
+		#top-logo{
+			@include widheit(null, 86px);
+		}
+		#top-nav{
+			@include widheit(null, 56px);
+		}
+	}
+	#main{
+		@include widheit(1130px, null);
+		#shoppingCart{
+			#shoppingCart-top{
+				@include widheit(null, 35px);
+				border-top:1px solid #eaeaea;
+			}
+			
+		}
+		#collection{
+			
+		}
+	}
+	
+}

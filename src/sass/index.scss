@@ -1,0 +1,120 @@
+@mixin widheit($width,$height){
+	width:$width;
+	height:$height;
+} 
+$float-carte-height : 520px !default;
+// @mixin get-float-carte-height{
+// 	@if $float-carte-height != '520px'{
+// 		return $float-carte-height;
+// 	}@else {
+// 		return $float-carte-height;
+// 	}
+// }
+body{
+	
+	#float-carte{
+		@include widheit(165px, $float-carte-height);
+		position:absolute;
+		left:194px;
+		top:164px;
+		background: black;
+		opacity: 0.5;
+	}
+	#banner{
+				// clear: both;
+				@include widheit(100%, 420px);
+				overflow: hidden;
+	// 			width:100%;
+	// 			height:420px;
+				// background:darkgoldenrod;
+				img{
+					// @include widheit(null, 100%);
+					
+					// $float-carte-height : &.height;
+					
+				}
+			}
+			#hot-spot{
+				@include widheit(1130px, 100px);
+				// background:skyblue;
+				// $float-carte-height : (+= &.height);
+				p{
+					float:right;
+					height:100%;
+					img{
+						height:99px;
+						float:right;
+						border-right:1px solid #d6d6d6;
+						border-bottom:1px solid #d6d6d6;
+					}
+				}
+			}
+	#main{
+		width:1130px;
+		// height:100%;
+		// background: darkcyan;
+		#main-sell{
+			height:497px;
+			// background: darkblue;
+			&>p{
+				height:57px;
+				font-size:22px;
+				color:#5da700;
+				font-weight: bold;
+				line-height: 57px;
+				// background: cadetblue;
+				span{
+					color:#bbbbbb;
+					font-size:9px;
+					font-weight: normal;
+				}
+				
+			}
+			&>a{
+				display:block;
+				&>img{
+					float:left;
+				}
+			}
+			
+			ul{
+				@include widheit(900px, 440px);
+				float:left;
+				li{
+					@include widheit(214px, 214px);
+					// float:left;
+					border:1px solid #eeeeee;
+					float:left;
+					margin:0 0 9px 9px;
+					background:url(../src/img/index/330215001519711105.jpg) no-repeat center 0;
+					&>p{
+						// height:160px;
+					}
+					&>span{
+						display: block;
+// 						float:left;
+						padding-top:150px;
+						font-size:12px;
+						
+					}
+					p{
+						font-size:10px;
+						color:#ff6600;
+						float:left;
+						span:first-of-type{
+							font-size:18px;
+						}
+						span:nth-of-type(2){
+							color:#ffa169;
+							font-size:10px;
+							// float:left;
+							text-decoration: line-through;
+						}
+					}
+				}
+			}
+			
+		}
+		
+	}
+}
