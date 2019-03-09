@@ -81,6 +81,7 @@ body{
 				@include widheit(900px, 440px);
 				float:left;
 				li{
+					list-style: none;
 					@include widheit(214px, 214px);
 					// float:left;
 					border:1px solid #eeeeee;
