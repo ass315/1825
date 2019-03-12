@@ -1,19 +1,9 @@
-@mixin widheit($width,$height){
-	width:$width;
-	height:$height;
-} 
-$float-carte-height : 520px !default;
-// @mixin get-float-carte-height{
-// 	@if $float-carte-height != '520px'{
-// 		return $float-carte-height;
-// 	}@else {
-// 		return $float-carte-height;
-// 	}
-// }
+@import './tools.scss';
+
 body{
 	
 	#float-carte{
-		@include widheit(165px, $float-carte-height);
+		@include widheit(165px, 520px);
 		position:absolute;
 		left:194px;
 		top:164px;

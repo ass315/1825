@@ -1,7 +1,4 @@
-@mixin widheit($width,$height){
-	width:$width;
-	height:$height;
-} 
+@import './tools.scss';
 body{
 	#navi{
 		@include widheit(1130px, 50px);

@@ -1,16 +1,15 @@
+@import './tools.scss';
+
 *{
 	padding:0;
 	margin:0 auto;
 }
-@mixin widheit($width,$height){
-	width:$width;
-	height:$height;
-} 
+
 body{
 	width:100%;
 	#top{
 		overflow: hidden;
-		@include widheit(100%, 164px);
+		@include widheit(100%, null);
 		border-bottom: 1px solid #a4d666;
 // 		width:100%;
 // 		height:166px;

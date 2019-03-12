@@ -1,21 +1,5 @@
-@mixin widheit($width,$height){
-	width:$width;
-	height:$height;
-	
-} 
-@mixin widheitlong($width,$height,$background,$border,$borderRadius){
-	@include widheit($width,$height);
-	background:$background;
-	border:$border;
-	border-radius:$borderRadius;
-}
+@import './tools.scss';
 
-@mixin fontSizCol($fSize,$fColor,$lineHeight){
-	font-size:$fSize;
-	color:$fColor;
-	text-align: center;
-	line-height: $lineHeight;
-}
 body{
 	ul li{list-style:none;}
 	img{vertical-align: top;}
