@@ -17,6 +17,9 @@
 	line-height: $lineHeight;
 }
 body{
+	ul li{list-style:none;}
+	img{vertical-align: top;}
+	a{text-decoration: none;}
 	#navi{
 		@include widheit(1130px, 50px);
 		// background: cadetblue;
@@ -63,7 +66,7 @@ body{
 		#right{
 			@include widheit(948px, null);
 			float:right;
-			background:seagreen;
+			// background:seagreen;
 			#right-top{
 				&>ul{
 					@include widheit(400px, 500px);
@@ -258,7 +261,7 @@ body{
 			}
 			#right-popularize{
 				@include widheit(938px, 319px);
-				background:#00ff00;
+				background:#f7f7f7;
 				border-right:1px solid #e1e1e1;
 				border-top:1px solid #e1e1e1;
 				float:left;
@@ -427,22 +430,95 @@ body{
 				
 			}
 			#right-content{
+				margin-bottom: 40px;
 				float:left;
-				img{
-					float: left;
-				}
+				
 			}
 			#right-bottom{
-				@include widheit(948px, 797px);
+				@include widheit(942px, 798px);
 				float:left;
-				background: #736666;
-				&>P{
-					ul{
-						li{
-							list-style: none;
-							@include widheitlong(156px, 35px, #f7f7f7, 1px solid #e1e1e1, 0);
-							border-left:none;
-							border-bottom: 5px solid #7bc523;
+				// background: #736666;
+				border:1px solid #e1e1e1;
+				ul:first-of-type{
+					&>li{
+						// list-style: none;
+						float:left;
+						@include widheitlong(157px, 35px, #f7f7f7, null, 0);
+						@include fontSizCol(13px, #736666, 35px);
+						border-left:none;
+						border-bottom: 5px solid #7bc523;
+					}
+				}
+				dl{
+					float:left;
+					@include widheitlong(946px,756px,null, null,null);
+					dt{
+						@include widheitlong(920px, 68px, null, null, null);
+						border-bottom:1px dashed #e8e8e8;
+						img{
+							margin:8px 0 0 12px;
+							float:left;
+						}
+						a{
+							display: block;
+							// float: left;
+							@include widheitlong(160px, 32px, #68bb00, null, 5px);
+							@include fontSizCol(13px, #fff, 32px);
+							
+							margin:18px 0 0 20px;
+							float:left;
+						}
+					}
+					dd{
+						@include widheitlong(808px, 56px, null, null, null);
+						padding-top:12px;
+						padding-right:112px;
+						border-bottom:1px solid #e8e8e8;
+						p:first-of-type{
+							@include widheit(96px, 40px);
+							span:first-of-type{
+								@include widheit(96px, 13px);
+								background: url('../src/img/information/star.png') no-repeat center -1px;
+								float:left;
+							}
+							// margin-top:13px;
+							float:left;
+							display: block;
+							span:nth-of-type(2){
+							@include fontSizCol(9px, #333333, 27px);
+							float:left;
+							
+							}
+						}
+						h4{
+							font-weight: normal;
+							padding-left:56px;
+							float:left;
+						}
+						p:nth-of-type(2){
+							@include widheit(78px, 45px);
+							float:right;
+							// background: cadetblue;
+							
+							span{
+								&:first-of-type{
+									@include fontSizCol(12px, #333333, 18px);						
+								}
+								&:nth-of-type(2){
+									@include fontSizCol(12px, #333333, 18px);
+								}
+								&:nth-of-type(3){
+									background: url('../src/img/information/iconvip.png') no-repeat left -2px;
+									margin-top:2px;
+									height:22px;
+									width:100%;
+									float:left;
+									span{
+										float:right;
+										@include fontSizCol(12px, fColor, 22px);
+									}
+								}
+							}
 						}
 					}
 				}
