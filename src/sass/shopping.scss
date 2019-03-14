@@ -33,6 +33,7 @@ body{
 				& ul{
 					height:100%;
 					li{
+						font-size: 11px;
 						float:left;
 						height:100px;
 						line-height: 100px;
@@ -43,6 +44,7 @@ body{
 						&:nth-of-type(5){width:91px}
 						&:nth-of-type(6){width:80px}
 						&:nth-of-type(7){width:112px}
+						&:nth-of-type(8){width:108px}
 						
 					}
 				}
@@ -63,6 +65,14 @@ body{
 					border-bottom:1px solid #eaeaea;
 					ul{
 						// height:100%;
+						li{
+							text-align: left;
+							&:first-of-type{
+								img{
+									@include widheit(80px,80px);
+								}
+							}
+						}
 					}
 				}
 			}

@@ -8,14 +8,16 @@
 body{
 	width:100%;
 	#top{
-		overflow: hidden;
+		// overflow: hidden;
 		@include widheit(100%, null);
 		border-bottom: 1px solid #a4d666;
+		position:relative;
+		z-index:1;
 // 		width:100%;
 // 		height:166px;
 		#top-top{
 			@include widheit(100%, 37px);
-// 			width:100%;
+// 			width:100%;	
 // 			height:37px;
 			border-bottom:1px solid #e3e3e3 ;
 			background:#fafafa;
@@ -188,6 +190,9 @@ body{
 // 		}
 		
 	}
+		
+		
+		
 		
 		
 		#foolter{
